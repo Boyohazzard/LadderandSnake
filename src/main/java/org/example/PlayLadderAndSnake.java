@@ -17,7 +17,7 @@ public class PlayLadderAndSnake {
         //add player method here
 
         Dice diceRoll = new Dice();
-        for (Player player : StartingDice.startingDice()) {
+        for (Player player : PlayerOrder.playerOrder()) {
 
             while (player.getCurrentPosition() != boardSquares.size()) {
 

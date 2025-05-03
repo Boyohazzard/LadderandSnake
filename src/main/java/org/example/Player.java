@@ -1,6 +1,6 @@
 package org.example;
 
-public class Player {
+public class Player extends CompareDice {
     private String name;
     private int dice;
     private int currentPosition;
@@ -12,6 +12,14 @@ public class Player {
 
     public Player(String name, int dice) {
         this.name = name;
+        this.dice = dice;
+    }
+
+    public int getDice() {
+        return dice;
+    }
+
+    public void setDice(int dice) {
         this.dice = dice;
     }
 
